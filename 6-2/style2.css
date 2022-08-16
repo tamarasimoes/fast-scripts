@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;700;900&display=swap');
+
+body {
+  max-width: 80%;
+  width: 100%;
+  margin: 40px auto;					                            
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+
+header, form {
+  background-color: white;
+  border-radius: 5px;					                                          
+  box-shadow: 10px 5px 20px rgb(150, 150, 150); /* direita, abaixo, raio */
+  padding: 10px;
+}
+
+.container {
+  margin: 20px 0 20px 0;
+  min-width: 100%;
+}
+
+#tipo-2 {
+  margin-left: 15px;
+}
+
+.form-select {
+  width: 20%;
+}
+
+span {
+  font-size: small;
+}
+
+.form-check {
+  padding-right: 1.5em;
+  margin: 20px 0;
+}
+
+span {
+  width: 100%;
+}
+

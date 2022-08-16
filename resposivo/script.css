@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px) {
+  
+  header {
+    justify-content: center;
+  }
+  
+  header nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  .know-the-hotel .grid li.small {
+    flex-basis: 100%;
+  }
+  
+  .know-the-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+
+  .features .grid {
+    flex-direction: column;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  footer ul li i {
+    font-size: 30px;
+  }
+}

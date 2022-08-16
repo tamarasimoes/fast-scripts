@@ -1,0 +1,74 @@
+<!-- O método GET cria uma seqüência de consulta(query string) e a acrescenta à URL do script no servidor que manipula a solicitação. O método POST cria um par nome/valor que são passados no corpo da mensagem de pedido HTTP. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Submeter Palestra</title>
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <h1>Submeter Palestra</h1>
+    <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+  </header>
+
+  <main>
+    <form action='' method='get' class='formulario'>
+
+      <div class="container-nome">
+        <div class="conteudo">
+          <label for="nome-completo">Nome</label>
+          <input id="nome-completo" name="nome-completo" type="text">
+        </div>
+      </div>
+
+      <div class="conteudo">
+        <fieldset class="quadro-tipo">
+          <legend>Tipo de Evento</legend>
+          <input id="tipo-1" name="tipo" type="radio" value="Palco Principal" />
+          <label for="tipo-1">Palco Principal</label>
+          <input id="tipo-2" name="tipo" type="radio" value="workshop" checked />
+          <label for="tipo-2">Workshop</label>
+        </fieldset>
+      </div>
+
+      <div class="conteudo">
+        <label for="camiseta">Tamanho da Camiseta</label>
+        <select id="camiseta" name="camiseta">
+          <option value="pp">PP</option>
+          <option value="p">P</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="gg">GG</option>
+        </select>
+      </div>
+
+      <div class="conteudo">
+        <label for="resumo">Resumo</label>
+        <textarea id="resumo" name="resumo"></textarea>
+        <div class="instrucoes">Descreva o resumo com 500 palavras ou menos</div>
+      </div>
+
+      <div class="conteudo">
+        <label for="disponivel">
+          <input id="disponivel" name="disponivel" type="checkbox" value="disponivel" required>
+          <span>Estou disponível para a data do evento</span>
+        </label>
+      </div>
+
+      <div class="conteudo" id="botao">
+        <button type="enviar">Submit</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>
